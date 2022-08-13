@@ -20,7 +20,7 @@ src/assets/FireShot Capture 006 - Space Tourism Website - localhost.png
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://github.com/Nauman123Nasir/space-tourism-website/
 - Live Site URL: https://spacetourismhub.herokuapp.com/
 
 ## My process
