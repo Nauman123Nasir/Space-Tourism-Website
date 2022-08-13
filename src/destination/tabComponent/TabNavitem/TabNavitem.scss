@@ -1,0 +1,10 @@
+.destinationNavItems{
+    padding: 7px 0;
+    text-transform: uppercase;
+    &.active{
+        border-bottom:2px solid white;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

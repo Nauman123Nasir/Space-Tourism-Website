@@ -1,0 +1,211 @@
+.destionationTabContent{
+    display: flex;
+    padding: 0 12%;
+    .destHead
+        {  
+            font-size: 28px;
+            margin: 2% 0 2% 10%;
+            text-transform: uppercase;
+        }
+    .destinationImage{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+    .destinationContent{
+        flex: 1;
+        .distanceTime{
+            display: flex;
+            div{
+                margin-right: 70px;
+            }
+            .timeDistHead{
+                font-size: 10px;
+            }
+            .travelDistance,.travelTime{
+                font-size: 20px;
+                font-family: 'Bellefair';
+            }
+        }
+        .destinationDescription{
+            margin-bottom: 50px;
+            text-align: justify;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #D0D6F9;
+        }
+        .destinationName{
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 115px;
+            color: #FFFFFF;
+            margin: 24px 0;
+            text-align: left;
+            .distanceTime{
+                .timeDistHead{
+                    font-family: 'Barlow Condensed';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 2.3625px;
+                    text-transform: uppercase;
+                    color: #D0D6F9;
+                }
+                .travelTime{
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }            
+        }
+        hr{
+            border: 0.2px solid #80808096;
+        }
+    }
+    .nav{
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .destionationTabContent{
+        .destinationImage{  
+            padding: 10% 10% 5% 0%;
+         img{
+            width:100%;
+         }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .destionationTabContent{
+        flex-direction: column;
+        .destinationImage{  
+         text-align: center;
+         img{
+            width:60%;
+         }
+        }
+        .destinationContent{
+            .nav{
+                justify-content: space-around;
+                padding: 0 15%;
+                ul{
+                    li{
+                        margin: 0 !important;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 2.7px;
+                    }
+                }
+            }
+        }
+        .mainContent{
+            justify-content: center;
+            .destinationName{
+                font-size: 135px;
+                font-weight: 400;
+                line-height: 92px;
+                font-style: normal;
+                text-align: center;
+            }
+            .destinationDescription{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+            }
+            .distanceTime{
+                margin-bottom: 50px;
+                justify-content: space-evenly;
+                .timeDistHead{
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                letter-spacing: 2.3625px;  
+                }
+                .travelTime,.travelDistance{
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+                }
+                div{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .destionationTabContent{
+        .destinationImage{
+         padding: 0;   
+         text-align: center;
+         img{
+            width:60%;
+         }
+        }
+        .destinationContent{
+            .nav{
+                justify-content: center;
+                ul{
+                    li{
+                        line-height: 17px;
+                        letter-spacing: 2.3625px;
+                    }
+                }
+            }
+        }
+        .mainContent{
+            justify-content: center;
+            .destinationName{
+                text-align: center;
+                font-size: 76px;
+                line-height: 64px;
+            }
+            .destinationDescription{
+                text-align: center;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .distanceTime{
+                margin-bottom: 50px;
+                flex-direction: column;
+                align-items: center;
+                .timeDistHead{
+                    font-size:14px;
+                    line-height: 17px;
+                    letter-spacing: 2.3625px;
+                    text-align: center;
+                }
+                .travelDistance,.travelTime{
+                    font-size: 28px;
+                    margin-top: 10px;
+                    line-height: 32px;
+                    text-align: center;
+                
+                }
+                div{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

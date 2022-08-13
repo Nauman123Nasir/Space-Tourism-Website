@@ -1,0 +1,225 @@
+.homePage{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    .homePageContainer{
+        padding: 12% 10% 0 10%;
+        display: flex;
+
+        .homePageSectionOne{
+           flex: 1;
+           color: white; 
+           .travel{
+            font-size: 28px;
+            font-family: 'Barlow Condensed';
+            text-transform: uppercase;
+            line-height: 33.6px;
+            letter-spacing: 4.72px;
+            font-weight:400;
+           }
+           .spaceHead{
+            font-size: 150px;
+            font-weight: 400;
+            line-height: 172px;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+            font-family: 'bellefair';
+
+           }
+           .description{
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 0 0 0;
+            line-height: 32px;
+            font-family: 'Barlow Condensed';
+
+           }
+        }
+        .homePageSectionTwo{
+            flex: 1;
+            display: flex;
+            padding: 15% 0 0 20%;
+            justify-content: center;
+            align-items: center;
+            
+            .explore{
+                display: inline-block;
+                border-radius: 50%;
+                min-width: 20px;
+                min-height: 20px;
+                padding: 45px;
+                background: white;
+                color: black;
+                text-align: center;
+                line-height: 1;
+                box-sizing: content-box;
+                white-space: nowrap;
+                &:hover {
+                box-shadow:  0px 0px 0px 20px #97979757;
+                }
+                span{
+                    font-family:'Bellefair'; 
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 26.67px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                
+            }
+            .explore:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                padding-top: 100%;
+                height: 0;
+              }
+              .explore span {
+                font-size: 32px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+         }
+         
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .homePage{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        .homePageContainer{
+            flex-direction: column;
+            .homePageSectionOne{
+                text-align: center;
+                .description{
+                    padding: 0 10%;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #D0D6F9;
+                }
+                .travel{
+                    margin-bottom:3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 3.375px;
+                    color: #D0D6F9;
+                }
+                .spaceHead{
+                    font-weight: 400;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 150px;
+                    line-height: 150px;                
+                    color: #FFFFFF;
+                }
+            }
+            .homePageSectionTwo{
+                padding: 15% 0 10% 0%;
+            }
+          }
+    }
+}
+@media screen and (max-width: 375px){
+    .homePage{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        .homePageContainer{
+            .homePageSectionOne{
+                text-align: center;
+                .description{
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                .travel{
+                    padding-top: 44px;
+                    margin-bottom:3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 2.7px;
+                }
+                .spaceHead{
+                    line-height: 100px;
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 80px !important;
+                    line-height: 100px;
+                    text-align: center;
+                    
+                }
+            }
+            .homePageSectionTwo{
+                padding: 42% 0 10% 0%;
+                .exploreSection{
+                    .explore{
+                        padding: 33px;
+                        span{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 23px;                            
+                            text-align: center;
+                            letter-spacing: 1.25px;
+                            color: #0B0D17;
+                        }
+                    }
+                }
+            }
+          }
+    }
+}
+@media screen and (max-width: 946px){
+    .homePage{
+        .homePageContainer{
+            flex-direction: column;
+            .homePageSectionTwo{
+                padding: 12% 0 5% 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px){
+    .homePage{
+        .homePageContainer{
+            flex-direction: column;
+            .homePageSectionOne{
+                .spaceHead{
+                    font-size: 130px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 478px){
+    .homePage{
+        .homePageContainer{
+            flex-direction: column;
+            .homePageSectionOne{
+                .spaceHead{
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+}
+// height: 665px;
+// width: 348px;

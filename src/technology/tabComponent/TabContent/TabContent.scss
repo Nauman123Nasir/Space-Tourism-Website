@@ -1,0 +1,196 @@
+.TechTabContent{
+    display: flex;
+    padding: 7% 0 6% 10%;
+    color: white;
+    .spaceLaunch{
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        .techNumbering{
+            margin-right: 10px;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 22px;
+            letter-spacing: 4.725px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+        }
+    }
+    .technologyContent{
+        display: flex;
+        .contentSection{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            .techContSecOne{
+                padding: 0 48px 0 0;
+            }
+            .techContSectwo{
+                padding-top: 38px;
+                .terminlogoy{
+                    font-family: 'Barlow Condensed';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                    color: #D0D6F9;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                }
+                .technologyName{
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 56px;
+                    line-height: 64px;                    
+                    color: #FFFFFF;
+                    margin: 0;                 
+                }
+                .technologyDescription{
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #D0D6F9;
+                }
+            }
+            .techNav{
+                padding-left: 0;
+                list-style-type: none;
+            }
+        }
+        .technologyImage{
+            flex: 1;
+            img{
+                float: right;
+                width: 72%;
+                height: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .TechTabContent{
+        padding: 0;
+        .spaceLaunch{
+            font-size: 20px;
+            margin: 10% 0 3% 5%;
+            line-height: 24px;
+            letter-spacing: 3.375px;
+            .techNumbering{
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 3.375px;
+            }
+        }
+      .technologyContentContainer{
+        .technologyContent{
+            flex-direction: column;
+            .contentSection{
+             flex-direction: inherit;   
+             order: 2;
+             .techContSectwo{
+                padding: 0 16%;
+                margin: 10px 0 45px 0;
+                .terminlogoy{
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;   
+                }
+                .technologyName{
+                    font-size: 45px;
+                    line-height: 71px;
+                }
+                .technologyDescription{
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .terminlogoy , .technologyName , .technologyDescription{
+                    text-align: center;
+                }
+             }
+             .techContSecOne{
+                margin-top: 5%;
+                padding: 0;
+                .techNav{
+                  .techListItems{
+                    margin: 0 12px;
+                  }
+                }
+             }
+            }
+            .technologyImage{
+             order: 1;
+             img{
+                width:101%;
+                height:310px;
+             }
+            }
+        }
+      }
+    }
+}
+@media screen and (max-width: 375px){
+    .TechTabContent{
+        padding: 0;
+        .spaceLaunch{
+            font-size: 16px;
+            text-align: center;
+            .techNumbering{
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+
+            }
+
+        }
+      .technologyContentContainer{
+        .technologyContent{
+            flex-direction: column;
+            .contentSection{
+             flex-direction: inherit;   
+             order: 2;
+             .techContSectwo{
+                padding: 0 5%;
+                margin: 10px 0 45px 0;
+                .terminlogoy , .technologyName , .technologyDescription{
+                    text-align: center;
+                }
+                .terminlogoy{
+                    font-size: 14px;
+                }
+                .technologyName{
+                    font-size: 38px;
+                    line-height: 34px;
+                    margin-top: 10px;   
+                }
+                .technologyDescription{
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 25px;
+                }
+             }
+             .techContSecOne{
+                margin-top: 5%;
+                padding: 0;
+                .techNav{
+                  .techListItems{
+                    margin: 0 12px;
+                  }
+                }
+             }
+            }
+        }
+      }
+    }
+}

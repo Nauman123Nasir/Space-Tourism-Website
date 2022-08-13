@@ -1,0 +1,27 @@
+.techListItems{
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 18px 15px 10px 15px;
+    border: 1px solid #454545;
+    color: white;
+    text-align: center;
+    line-height: 1;
+    box-sizing: content-box;
+    white-space: nowrap;
+    margin-bottom: 50%;
+    &.active{
+        color: black;
+        background-color: white;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 375px){
+   .techListItems{
+    padding: 1px 8px;
+    line-height: 2;
+   }
+}
